@@ -1,7 +1,11 @@
-export const tsuruLinkClickKey = 'tsuru-link-click';
+export const keys = {
+    tsuruLinkClick: "tsuru-link-click",
+    tsuruUserClick: "tsuru-user-click",
+};
+
 export const handleLinkClick = (account: string, column: string, href: string) => {
     document.dispatchEvent(new CustomEvent(
-        tsuruLinkClickKey,
+        keys.tsuruLinkClick,
         {
             detail: {
                 href,
@@ -12,10 +16,9 @@ export const handleLinkClick = (account: string, column: string, href: string) =
     ))
 };
 
-export const tsuruUserClickKey = 'tsuru-user-click';
 export const handleUserClick = (account: string, column: string, id: string) => {
     document.dispatchEvent(new CustomEvent(
-        tsuruUserClickKey,
+        keys.tsuruUserClick,
         {
             detail: {
                 id,
