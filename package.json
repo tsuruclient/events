@@ -1,0 +1,10 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "repository": "git@github.com:tsuruclient/events.git",
+  "author": "origamium <onoueorigami@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.3.3"
+  }
+}
