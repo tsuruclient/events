@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "dist/dist.js",
   "typings": "dist/typings/index.d.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": "https://github.com/tsuruclient/events",
   "author": "origamium <onoueorigami@gmail.com>",
   "license": "MIT",
